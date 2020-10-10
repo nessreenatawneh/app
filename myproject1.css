@@ -1,0 +1,237 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-image:linear-gradient( red,orange) ;
+}
+header a{
+    color:black;
+}
+#spanid {
+width: 30%;
+height: 100%;
+float: right;
+background-color: #fafafa;
+}
+#h1id{
+    float: left;
+    line-height: 100px;
+    padding: 0 15px;
+}
+#imgid{
+    width:100px;
+    height: 100%;
+    border-radius: 50%;
+}
+nav{
+    width:70%;
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    color:white; 
+    font-weight: bold;
+    display: inline-block; 
+}
+nav  a:hover{
+    background-color: white;
+    color:black;
+    width:100%;
+    height: 100%;
+}
+nav li{
+    width: 100px;
+    display: inline-block;
+    line-height: 100px;
+    text-align: center;
+}
+main{
+    width: 100%;
+    height: 450px;
+    background-color: red;
+    border-top: 3px solid white;
+   /* clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);*/
+   animation-name: changebackground;
+   animation-duration: 12s;
+   animation-iteration-count: infinite;
+}
+@keyframes  changebackground{
+    0%{
+    background-color:white;
+    }
+    50%{
+        background-color:red;
+    }
+    100%{
+        background-color:black;
+    }
+}
+main aside{
+    background-color: rgb(255, 248, 248);
+    width: 30%;
+    height: 450px;
+    float: left;
+}
+aside img{
+    width: 90%;
+    height: 40%;
+    object-fit: scale-down;
+    text-align: center;
+}
+#hid{
+    padding: 20px  0;
+    border-bottom: 2px   solid red;
+    text-align: center;
+}
+
+#artid{
+    float: right;
+    width: 70%;
+    height: 450px;
+    position: relative;
+}
+#divid{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 180px;
+    background-color: rgb(255, 248, 248);
+    text-align: center;
+    
+    
+    
+}
+#divid h1{
+    border-bottom:2px  solid  black;
+    padding: 15px  0;
+    font-weight: bold;
+}
+#divid p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    
+}
+#divid img{
+    width:45px;
+    height: 50px;
+    margin-top: 20px;
+    border-bottom: 2px  solid black;   
+}
+#divid img:hover{
+    width:70px;
+    border-color: red;
+
+}
+footer{
+    width:100%;
+    height: 300px;
+    background-image: linear-gradient(red,orange);
+}
+footer fieldset{
+    height: 300px;
+}
+#legendid{
+    font-weight: bold;
+    font-size: 25px;
+}
+footer p{
+    font-size: 15px;
+    color:white;
+}
+footer p:hover{
+    font-size:30px;
+    -webkit-text-stroke:1px yellow;
+    color:transparent;
+    outline: 0px;
+}
+
+@media screen and (max-width:1265px){
+    #spanid{
+        width:35%;
+    }
+    #artid{
+        width:65%;
+    }
+    aside{
+        width:35%;
+    }
+     footer{
+        width:100%;
+ 
+    }
+    /* #ftid{
+      width:100px;
+      height: 70px;
+  }*/
+}
+    @media  (max-width:1200px)  {
+       #divid{
+           width:40%;
+       }
+    } 
+       @media  (max-width:801px) {
+        header , main{
+              height: auto;
+          } 
+        #spanid{
+            width:100%;
+            text-align: center;
+        }
+        #divid{
+            width: 100%;
+            height: auto;
+        }
+       
+    #h1id , #imgid{
+        float:none;
+    }
+    span a{
+        text-decoration: none;
+    }
+    nav{
+        width: 100%;
+    }
+    main aside{
+        width:100%;
+    }
+    #artid{
+        height: 230px;
+        width: 100%;
+        background-color: #fafafa;
+    }
+    
+     footer fieldset{
+         width:100%;
+         height: 300px; 
+     }
+     footer p{
+    color:black;
+     }
+     footer iframe{
+         width:80%;
+         height: 100px;
+     }
+    }
+
+
+    @media (max-width:500px){
+        nav li{
+            display: block;
+            width: 100%;
+        }
+    }
+
+   @media  (orientation:landscape) {
+     #divid{
+         background-color:white;
+     }
+   }
+    
+
+
+   
